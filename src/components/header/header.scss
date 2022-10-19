@@ -1,0 +1,35 @@
+@use '../../scss/variables' as *;
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $mainColor;
+    margin-bottom: 2.5em;
+    padding: 1em;
+
+    &_title {
+        color: $textColorAccent;
+        font-weight: 600;
+        font-size: 2em;
+    }
+}
+
+.btn_list {
+    display: flex;
+}
+
+.btn {
+    margin-left: 20px;
+    padding: 4px 15px;
+    border: none;
+    color: $textColorAccent;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: $mainColor;
+
+    &:hover {
+        background-color: $hoverColor;
+    }
+}

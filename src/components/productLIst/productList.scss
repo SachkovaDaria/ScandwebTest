@@ -1,0 +1,38 @@
+@use '../../scss/variables' as *;
+
+.products {
+    padding: 0 2em;
+
+    .product {
+        &_item {
+            background-color: $productCartBgr;
+            padding: 1em;
+            font-size: 1em;
+            border-top: 2px solid $mainColor;
+        }
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5em;
+
+
+            list-style: none;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        &_sku,
+        &_name,
+        &_price {
+            padding-bottom: 1em;
+
+        }
+
+        &_sku {
+            padding-top: 1em;
+        }
+
+    }
+
+}

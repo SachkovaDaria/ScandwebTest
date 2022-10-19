@@ -1,0 +1,67 @@
+@use '../../scss/variables' as *;
+
+.form {
+    padding: 0 2em;
+
+    fieldset {
+        border: none;
+    }
+
+    &-part {
+        margin-bottom: 1em;
+
+        label {
+            font-weight: 600;
+        }
+
+        select {
+            margin-left: 1em;
+        }
+
+        input {
+            vertical-align: middle;
+            padding: 4px 10px;
+            border-radius: 5px;
+            margin: 0 1em;
+            border: 1px solid #7a7a7a;
+        }
+
+        legend {
+            margin-bottom: 1em;
+            font-weight: 600;
+        }
+
+        input:invalid:not(:placeholder-shown) {
+            border-color: red;
+        }
+
+        input:valid:not(:placeholder-shown) {
+            border-color: green;
+        }
+    }
+
+    &_title {
+        background-color: $mainColor;
+        color: #ffffff;
+        margin-bottom: 1em;
+        padding: 0.5em;
+    }
+
+    &_btn {
+        &--save {
+            border: none;
+            color: $textColorAccent;
+            background-color: $mainColor;
+            border-radius: 5px;
+            padding: 4px 15px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        &--cancel {
+            margin-left: 1em;
+            text-decoration: underline;
+        }
+    }
+
+}
